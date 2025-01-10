@@ -46,7 +46,7 @@ button:focus {
 }
 /* Header */
 .header {
-  background-color: black;
+  background-color: var(--color-prymary);
   position: fixed;
   top: 0;
   width: 100%;
