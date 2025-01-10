@@ -11,6 +11,8 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+  /* Size */
+  --size-max-width: 1200px;
 }
 * {
   box-sizing: border-box;
@@ -48,6 +50,10 @@ button:focus {
 .section {
   padding: 4rem;
   text-align: center;
+}
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
 }
 .title {
   font-size: 2.5rem;
@@ -163,4 +169,26 @@ button:focus {
 }
 .major:hover .major__icon {
   transform: rotate(-15deg) scale(1.2);
+}
+.jobs {
+  text-align: start;
+}
+.job {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.job__name {
+  color: var(--color-prymary);
+}
+.job__period {
+  color: var(--color-prymary);
+  font-size: 0.8rem;
+}
+.job__logo {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 15px;
 }
