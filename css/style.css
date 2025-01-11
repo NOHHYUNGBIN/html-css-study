@@ -1,6 +1,6 @@
 :root {
   /* App Colors */
-  --color-prymary: var(--color-black);
+  --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
   --color-accent: var(--color-blue);
   --color-accent-variant: var(--color-orange);
@@ -65,7 +65,7 @@ button:focus {
 }
 /* Header */
 .header {
-  background-color: var(--color-prymary);
+  background-color: var(--color-primary);
   position: fixed;
   top: 0;
   width: 100%;
@@ -102,7 +102,7 @@ button:focus {
 }
 /* Home */
 #home {
-  background-color: var(--color-prymary);
+  background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -180,10 +180,10 @@ button:focus {
   margin-bottom: 1rem;
 }
 .job__name {
-  color: var(--color-prymary);
+  color: var(--color-primary);
 }
 .job__period {
-  color: var(--color-prymary);
+  color: var(--color-primary);
   font-size: 0.8rem;
 }
 .job__logo {
@@ -191,4 +191,38 @@ button:focus {
   height: 50px;
   object-fit: contain;
   margin-right: 15px;
+}
+/* Skills */
+#skills {
+  background-color: var(--color-primary-variant);
+  color: var(--color-text);
+}
+.skills {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.skills__title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.skills__cording {
+  grid-row: span 2;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+.skills__tools {
+  padding: 1rem;
+}
+.skills__credential {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  filter: brightness(150%);
 }
