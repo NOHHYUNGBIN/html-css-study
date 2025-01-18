@@ -30,7 +30,8 @@
     <!-- css -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- javascript -->
-    <script src="/src/main.js" defer></script>
+    <script type="module" src="/src/main.js" defer></script>
+    <script type="module" src="/src/projects.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -239,23 +240,23 @@
         <div class="max-container">
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-filter="all">
                 All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-filter="front-end">
+                Front-end <span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-filter="back-end">
                 Back-end <span class="category__count">3</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="">
                 <img
                   src="images/projects/project1.webp"
@@ -268,7 +269,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="">
                 <img
                   src="images/projects/project2.webp"
@@ -281,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="">
                 <img
                   src="images/projects/project3.webp"
@@ -294,7 +295,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="">
                 <img
                   src="images/projects/project4.webp"
@@ -307,7 +308,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="">
                 <img
                   src="images/projects/project5.webp"
@@ -320,7 +321,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="">
                 <img
                   src="images/projects/project6.webp"
@@ -333,7 +334,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="">
                 <img
                   src="images/projects/project7.webp"
@@ -346,7 +347,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="">
                 <img
                   src="images/projects/project8.webp"
