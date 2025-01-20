@@ -417,6 +417,23 @@ button:focus {
 .contact__link:hover {
   color: var(--color-accent);
 }
+.about__projects {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  background-color: var(--color-gray);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.about__projects p {
+  margin: 1rem;
+  color: var(--color-white);
+}
+.about__projects p strong {
+  color: var(--color-accent);
+}
 @media screen and (max-width: 768px) {
   .section {
     padding: 4rem 2rem;
