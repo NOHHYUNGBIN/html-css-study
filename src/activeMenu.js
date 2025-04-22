@@ -40,15 +40,15 @@ function observerCallback(entries) {
   selectMenuItem(menuIndex);
 }
 
-const findFirstIntersecting = (intersections) => {
+function findFirstIntersecting(intersections) {
   const index = intersections.indexOf(true);
   return index >= 0 ? index : 0;
-};
+}
 
-const selectMenuItem = (index) => {
+function selectMenuItem(index) {
   const menuItem = menuItems[index];
   if (!menuItem) return;
   activeMenuItem.classList.remove("active");
   activeMenuItem = menuItem;
   activeMenuItem.classList.add("active");
-};
+}
